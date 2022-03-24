@@ -3,8 +3,8 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 public class fenetre extends JFrame implements MouseListener {
-    JFrame F;
     
+    JFrame F;
     public final static int HT =1073;
     public final static int LG =762;
 
@@ -36,7 +36,6 @@ public class fenetre extends JFrame implements MouseListener {
 		System.out.println(s);
 	}
 }
-
 class gestionFenetre extends WindowAdapter{
     public void windowClosing(WindowEvent e){
         System.exit(0);
