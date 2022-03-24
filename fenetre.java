@@ -9,6 +9,7 @@ public class fenetre extends JFrame implements MouseListener {
 
     public fenetre() {
         JFrame F = new JFrame("INSA Maps");
+        
         F.setSize(HT,LG);
         F.setVisible(true);
         F.addWindowListener(new gestionFenetre());
