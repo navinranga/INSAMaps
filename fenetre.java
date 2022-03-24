@@ -4,6 +4,7 @@ import java.awt.event.*;
 import java.awt.*;
 public class fenetre extends JFrame implements MouseListener {
     JFrame F;
+    
     public final static int HT =1073;
     public final static int LG =762;
 
