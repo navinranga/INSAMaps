@@ -16,7 +16,7 @@
 - Clone the repository:
 
    ```bash
-   git clone https://github.com/navinranga/project-INSAMaps.git
+   git clone https://github.com/navinranga/INSAMaps.git
    cd insa-maps
 - Compile and run:
 
