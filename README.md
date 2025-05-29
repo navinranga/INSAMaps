@@ -1,6 +1,6 @@
 # INSA Maps
 
-**INSA Maps** is a simple Java application that calculates the shortest path between two rooms on the INSA Lyon campus using **Dijkstra's algorithm**.
+**INSA Maps** is a simple Java application (made during a 2nd year academic project) that calculates the shortest path between two rooms on the INSA Lyon campus using **Dijkstra's algorithm**.
 
 ## Features
 
@@ -16,7 +16,7 @@
 - Clone the repository:
 
    ```bash
-   git clone https://github.com/navinranga/insa-maps.git
+   git clone https://github.com/navinranga/project-INSAMaps.git
    cd insa-maps
 - Compile and run:
 
