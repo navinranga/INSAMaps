@@ -1,0 +1,81 @@
+import javax.swing.*;
+import java.awt.*;
+import java.util.LinkedList;
+
+class FenetreGraphique extends JComponent {
+
+    int[][][] cheminX=null;
+    int[][][] cheminY=null;
+
+    LinkedList<LinkedList<Integer>> listX;
+    LinkedList<LinkedList<Integer>> listY;
+    int[][] coordX;
+    int[][] coordY;
+
+    boolean jeDessine=false;
+/*
+    public void dessinerChemin(int[] coordXChemin, int[] coordYChemin){
+        repaint();
+    }
+
+    public void effacherChemin(){
+        repaint();
+    }
+
+*/
+    public void cheminDessiner(LinkedList<LinkedList<Integer>> listXAffect, LinkedList<LinkedList<Integer>> listYAffect){
+        this.listX=listXAffect;
+        this.listY=listYAffect;
+        int[][] coordX=new int[listX.size()][1000];
+        int[][] coordY=new int[listY.size()][1000];
+
+        for(LinkedList<Integer> sublist : listX) {
+            int i=0;
+            for(Integer o : listX.get(i)) {
+                coordX[listX.size()][i]=o;
+            }
+            i++;
+        }
+        for(LinkedList<Integer> sublist : listY) {
+            int i=0;
+            for(Integer o : listY.get(i)) {
+                coordX[listY.size()][i]=o;
+            }
+            i++;
+        }
+        //this.cheminX=coordX;
+        //this.cheminY=coordY;
+        jeDessine=true;
+        repaint();
+    }
+
+    public void paint(Graphics g) {
+
+
+        super.paint(g);
+        ImageIcon icon = new ImageIcon("pictures/INSA_Maps.png");
+        int x = 0;
+        int y = 0;
+        icon.paintIcon(this, g, x, y);
+
+        Graphics2D g2 = (Graphics2D) g;
+        g2.setStroke(new BasicStroke(7));
+        g2.setColor(Color.red);
+
+
+//        g2.drawPolyline(cheminX,cheminY, cheminX.length);
+        //int correctionCoord=19;
+        //g2.drawLine(70+correctionCoord, 630, 158+correctionCoord, 633);
+        //https://stackoverflow.com/questions/38210765/is-it-possible-to-create-an-outline-around-a-polyline line with outline
+
+        if(jeDessine)  {
+            //g2.drawPolyline(coordX,coordY,coordX.length);
+            for(int i=0;i<coordX.length;i++) {
+                System.out.println(cheminX[1].length);
+                g2.drawPolyline(coordX[i], coordY[i], coordX[i].length);
+                System.out.println("hello");
+            }
+        }
+    }
+
+}
