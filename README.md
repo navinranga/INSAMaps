@@ -13,21 +13,18 @@
 - Dijkstra's algorithm for shortest path
 
 ## Usage
-
-1. Clone the repository:
+- Clone the repository:
 
    ```bash
    git clone https://github.com/navinranga/insa-maps.git
    cd insa-maps
-
-2. Compile and run:
+- Compile and run:
 
   ```bash
-  javac Main.java
-  java Main
+   javac Main.java
+   java Main
 
-
-## Licence
+## License
 
 MIT License
 
