@@ -21,8 +21,8 @@
 - Compile and run:
 
   ```bash
-   javac Main.java
-   java Main
+  javac Main.java
+  java Main
 
 ## License
 
